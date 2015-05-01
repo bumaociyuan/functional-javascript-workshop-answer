@@ -1,7 +1,10 @@
-function doubleAll(numbers) {
-	return numbers.map(function(n) {
-		return 2*n;
-	})
+function getShortMessages(messages) {
+  // SOLUTION GOES HERE
+  return messages.filter(function (n) {
+  	return n.message.length < 50;
+  }).map(function (n) {
+  	return n.message;
+  })
 }
 
-module.exports = doubleAll
+module.exports = getShortMessages
