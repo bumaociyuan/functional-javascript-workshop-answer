@@ -1,7 +1,7 @@
-function repeat(operation, num) {
-      // SOLUTION GOES HERE
-      return operation(num)
+function doubleAll(numbers) {
+	return numbers.map(function(n) {
+		return 2*n;
+	})
 }
 
-// Do not remove the line below
-module.exports = repeat
+module.exports = doubleAll
